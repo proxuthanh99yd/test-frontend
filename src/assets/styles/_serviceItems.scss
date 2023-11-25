@@ -1,0 +1,32 @@
+.service-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 50px;
+    .service-inner {
+        .image {
+            img {
+                width: 150px;
+                height: 150px;
+                object-fit: cover;
+            }
+        }
+        .content-wrapper {
+            h5 {
+                font-size: 20px;
+                font-weight: 700;
+            }
+            p {
+                margin-top: 10px;
+                font-family: "Work Sans", Helvetica, Arial, sans-serif;
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+@media (max-width: 960px) {
+    .service-items {
+        grid-template-columns: 1fr;
+        row-gap: 70px;
+    }
+}

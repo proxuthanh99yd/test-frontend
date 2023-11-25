@@ -1,0 +1,25 @@
+.scroll-button {
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    width: 45px;
+    height: 45px;
+    z-index: 999;
+    cursor: pointer;
+    color: white;
+    background: #1ec6b6;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    svg {
+        width: 18px;
+        font-weight: 700;
+        path {
+            stroke-width: 3px;
+        }
+    }
+    transition: all 0.2s ease;
+    &:hover {
+        transform: translateY(-4px);
+    }
+}
